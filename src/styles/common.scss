@@ -1,0 +1,64 @@
+@import './fonts.scss';
+:global {
+  /* 禁用长按复制 */
+  * { user-select:none; }
+  input { -webkit-user-select:auto; }
+  /* 清除内外边距 */
+  body, h1, h2, h3, h4, h5, h6, hr, p, dl, dt, dd, ul, ol, li, img {
+    margin: 0;
+    padding: 0;
+    border: medium none;
+  }
+  /* 重置列表元素 */
+  ul, li {
+    list-style: none;
+  }
+  /* 重置超链接元素 */
+  a {
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  /* 全局公用样式 */
+  html, body, #app {
+    height: 100%;
+  }
+  body {
+    background-color: $color-bg-page;
+    color: $color-text-primary;
+    user-select: none;
+    -webkit-user-select: auto;
+    font-size: $font-size-base;
+    font-family: webfont;
+  }
+  /*页面容器*/
+  .page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: $color-bg-page;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+  }
+  .container {
+    flex: 1;
+    display: flex;
+    position: relative;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex-direction: column;
+    background-color: $color-bg-page;
+  }
+
+  /*文字省略号*/
+  .text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

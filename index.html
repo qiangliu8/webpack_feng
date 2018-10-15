@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<meta content="yes"name="apple-mobile-web-app-capable"/>
+		<meta content="withe"name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no"name="format-detection"/>
+		<meta content="email=no"name="format-detection"/>
+		<link href="//at.alicdn.com/t/font_771610_s6bkomlmi0e.css" type="text/css" rel="stylesheet"/>
+		<title>基于react+am的单页应用脚手架</title>
+		<!-- rem -->
+		<script>
+			(function (doc, win) {
+				var docEl = doc.documentElement,
+				resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if(clientWidth>=750){
+						docEl.style.fontSize = '20px';
+					}else{
+						docEl.style.fontSize = 20 * (clientWidth / 750) + 'px';
+					}
+				};
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+    		})(document, window);
+		</script>
+		<!-- 解决安卓端微信页面长按时出现浏览器选择打开问题 -->
+		<script>document.oncontextmenu = function (e) { e.preventDefault(); }</script>
+	</head>
+	<body>
+		<div id="app">
+		</div>
+	</body>
+</html>

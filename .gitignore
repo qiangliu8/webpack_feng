@@ -1,0 +1,11 @@
+.DS_Store
+dist/
+node_modules/
+# Editor directories and files
+.idea/
+package-lock.json
+#ide
+**/*.iml
+**/.settings/
+**/.classpath
+**/.project

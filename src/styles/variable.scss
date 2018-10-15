@@ -1,0 +1,35 @@
+// ---------------- Color -----------------
+/* 主题色 */
+$color-theme-primary: #66deff;  // 产品主色
+$color-theme-accent: #ff8787;  // 产品强调色
+/* 文字颜色 */
+$color-text-primary: #4b4b4b; // 主要信息字色
+$color-text-secondary: #666666; // 次要信息字色
+$color-text-inverse: #ffffff; // 反色
+$color-text-hint: #b3b3b3; // 辅助&提示字色
+/* 背景色 */
+$color-bg-page: #fff; // App底色
+// 按功能
+$color-divider: #e5e5e5; // 分隔线颜色
+// ---------------- Dimen -------------------
+/* 字号 */
+$font-size-icontext: 1rem;  // 图标辅助文字
+$font-size-base: 1.2rem;  // 基本字号
+$font-size-subhead: 1.4rem; // 副标题
+$font-size-heading: 1.6rem; // 标题
+// 展示型字号 font-size-display-sm、md、lg、xl等
+/* 间距 */
+$h-spacing-sm: 1rem;  // 水平间距
+$h-spacing-md: 1.5rem;
+$h-spacing-lg: 2rem;
+$v-spacing-sm: 1rem;  //  垂直间距
+$v-spacing-md: 1.5rem;
+$v-spacing-lg: 2rem;
+/* 圆角 */
+$radius-sm: 0.4rem;
+$radius-md: 0.8rem;
+$radius-lg: 1.2rem;
+// ---------------- 组件变量 -------------------
+// 如button-height(默认大小可不写尺寸标识)、button-height-sm
+// 变量命名规范${组件}-{属性}-{场景}-{状态}-{大小}-{反色}
+// 参考https://github.com/ant-design/ant-design-mobile/wiki/%E8%AE%BE%E8%AE%A1%E5%8F%98%E9%87%8F%E8%A1%A8%E5%8F%8A%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83
